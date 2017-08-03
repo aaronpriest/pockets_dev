@@ -1,0 +1,33 @@
+
+
+Date\time: Mon, 31 Jul 2017 16:35:20 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+No database selected
+
+Date\time: Mon, 31 Jul 2017 19:34:37 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+
+
+Date\time: Mon, 31 Jul 2017 19:36:46 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+
+
+Date\time: Mon, 31 Jul 2017 19:42:50 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+          0,NULL, 'checking', 0)' at line 2
+
+Date\time: Mon, 31 Jul 2017 19:43:29 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+Duplicate entry '1' for key 'PRIMARY'
+
+Date\time: Thu, 03 Aug 2017 17:23:05 +0200
+Page: database_driver_enhanced.php
+ Error: Database query failed! 
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RMB',3,
+          0, '../show/-7', NULL, 'checking', 0)' at line 2

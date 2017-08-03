@@ -1,0 +1,87 @@
+form {font-family: 'Raleway', sans-serif;}
+select, input{
+ text-align: center;
+  font-size:1em;
+  border-radius: 1em;
+  border: 1px solid gray;
+  padding:0.5%;
+
+}
+button{
+ text-align: center;
+  font-size:1em;
+  border-radius: 0.2em;
+  border: 1px solid gray;
+  padding:0.5%;
+  color:white;
+  background-color:RoyalBlue;
+  cursor: pointer;
+}
+
+
+.waitShield{
+  position:absolute;
+  width:100%;
+  height:100%;
+  margin: auto;
+  background-color: #CCCCCC;
+  background-
+  z-index: 2;
+  opacity: 0.6;
+  display:none;
+}
+.message {
+  background-color: RoyalBlue;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  border-radius: 1em;
+  position:absolute;
+  width: 10%;
+  top:50%;
+  left:50%;
+  padding: 1%;
+  z-index: 3;
+  display:none;
+}
+
+.warning{
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  position:absolute;
+  width: 20%;
+  top:50%;
+  left:50%;
+  padding: 1%;
+  z-index: 3;
+  display:none;
+}
+
+.special-buttons{
+  left:50%;
+}
+.error{
+  color:red;
+  font-family: inherit;
+  display:inline;
+}
+
+.pockets{
+    background-color: #ea4848;
+    color: white;
+    font-family: helvetica;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-bottom-right-radius:1em;
+    border-bottom-left-radius:1em;
+    margin:0.2%;
+    font-size: 1em;
+    padding:1%;
+    text-align: center;
+    cursor: pointer; //the "finger" is refered to as a pointer
+}

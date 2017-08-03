@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Pockets: Let's Setup your Pockets</title>
+ <!--All Meta-content-->
+    <meta name=viewport content='width=640'>
+    <meta charset="utf-8"/>
+
+    <meta name="description" content="An application that helps manage one's money. ">
+    <meta name="keywords" content="money, spent,budget, save, cost">
+    <meta name="author" content="Aaron B. Priest">
+
+ <!--Styles, scripts, other functional header content-->
+    <script src="../jquery-3.2.1.js"></script>
+    <script src="createScreenActions.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css?rf=now"/ >
+   <!--<link rel="icon" href="" />
+
+   -->
+
+<!--End: Styles and scripts-->
+
+  </head>
+  <body>
+    <div class="message">Creating the Pocket...</div>
+    <div class="waitShield"></div>
+    <header>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+    <section>
+      <form name="pockets-and-values">
+        <input id="purpose" type="hidden" value="create"/>
+        <input id="pocket-id" type="hidden" value=0/><!--important to the update functions more than this page-->
+      Pocket Name: <input col="50" type="text" name="pocketname" /><div class="error" id="pocketname-err"></div><br/><br/>
+      How much to fill: $<input col="10" type="text" name="amount"></input> <div class="error" id="amount-err"></div><br/><br/>
+      Type of Expense:
+      <select id="type">
+          <option value="RMB">Regular Monthly Bill</option>
+          <option value="EP">Everyday Purchases</option>
+          <option value="VMB">Variable Monthly Bill</option>
+          <option value="LMB">Large Monthly Bill</option>
+          <option value="SMB">Six Month Bill</option>
+          <option value="SMB">Annual Bill</option>
+          <option value="SP">Special Purchase</option>
+          <option value="BB">Bimonthly Bill (Uncommon)</option>
+          <option value="SAV">General Savings</option>
+      </select><br/><br/>
+      Day Due Number (for Bills Only): <input col="10" type="text" name="daydue"/> <div class="error" id="daydue-err"></div><br/><br/>
+      Save the leftovers? <input type="radio" name="accruetf" value="0" checked>No.</input><input type="radio" name="accruetf" value="1">Yes.</input><br/><br/>
+      Starting amount: $<input col="10" type="text" name="savedamount" onclick="this.select()" value="0"/> <div class="error" id="savedamount-err"></div><br/><br/>
+      Limit (Entering "0" means "No limit"): $<input col="10" type="text" name="capacity"/> <div class="error" id="capacity-err"></div><br/><br/>
+      Account:
+      <select id="account">
+          <option value="checking">Checking</option>
+          <option value="savings">Savings</option>
+      </select>
+
+    </form>
+    <br/><button id="sendButton" disabled="disabled">Create Pocket</button>
+    </section>
+    </main>
+  </body>
+</html>

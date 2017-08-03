@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Pockets: The eeeeasy way do money.</title>
+ <!--All Meta-content-->
+    <meta name=viewport content='width=640'>
+    <meta charset="utf-8"/>
+
+    <meta name="description" content="An application that helps manage one's money. ">
+    <meta name="keywords" content="money, spent,budget, save, cost">
+    <meta name="author" content="Aaron B. Priest">
+
+ <!--Styles, scripts, other functional header content-->
+    <script src="../../jquery-3.2.1.js"></script>
+    <script src="../retrievePocketInfo.js?rf=122"></script>
+    <script src="../../create/createScreenActions.js?rf=142"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css?rf=8"/ >
+   <!--<link rel="icon" href="" />
+
+   -->
+
+<!--End: Styles and scripts-->
+
+  </head>
+  <body>
+    <div class="message">Creating the Pocket...</div>
+    <div class="warning">Are you sure you want to delete this pocket?
+        <button class="special-buttons" style="background-color:white; color:black" id="yes-button">Yes</button> <button class="special-buttons" id="no-button">No</button>
+    </div>
+    <div class="waitShield"></div>
+
+    <header>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+    <section>
+
+      <form name="display-or-update-pockets">
+        <input id="purpose" type="hidden" value="update"/>
+        <input id="pocket-id" type="hidden" value=0 disabled="disabled"/>
+      Pocket Name: <input type="text" size="20" name="pocketname"  disabled="disabled"/><div class="error" id="pocketname-err"></div><br/><br/>
+      How much to fill: $ <input type="text" size="5" name="amount" disabled="disabled"></input> <div class="error" id="amount-err"></div><br/><br/>
+      Type of Expense:
+      <select id="type" disabled="disabled">
+          <option value="RMB">Regular Monthly Bill</option>
+          <option value="EP">Everyday Purchases</option>
+          <option value="VMB">Variable Monthly Bill</option>
+          <option value="LMB">Large Monthly Bill</option>
+          <option value="SMB">Six Month Bill</option>
+          <option value="SMB">Annual Bill</option>
+          <option value="SP">Special Purchase</option>
+          <option value="BB">Bimonthly Bill (Uncommon)</option>
+          <option value="SAV">General Savings</option>
+      </select><br/><br/>
+      Day Due Number (for Bills Only): <input type="text" size="5" name="daydue" disabled="disabled"/> <div class="error" id="daydue-err"></div><br/><br/>
+      Save the leftovers? <input id="accruetf-n" type="radio" name="accruetf" value="0" disabled="disabled">No.</input><input id="accruetf-y" type="radio" name="accruetf" value="1">Yes.</input><br/><br/>
+      Starting amount: $ <input type="text" size="5" name="savedamount" onclick="this.select()" value="0" disabled="disabled"/> <div class="error" id="savedamount-err"></div><br/><br/>
+      Limit (if any): $ <input type="text" size="5" name="capacity" disabled="disabled"/> <div class="error" id="capacity-err"></div><br/><br/>
+      Account:
+      <select id="account" disabled="disabled">
+          <option value="checking">Checking</option>
+          <option value="savings">Savings</option>
+      </select>
+
+    </form>
+    <br/><button id="showUpdateButton">Make Changes</button><button id="updateButton" style="display: none">Update Pocket</button>
+    <button id="deleteButton" style="display: none; background_color:red">Delete Pocket</button>
+
+    </section>
+    </main>
+  </body>
+</html>

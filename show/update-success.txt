@@ -1,0 +1,2 @@
+UPDATE pockets SET name='Second Testa', amount=122.30, type='RMB', daydue=1,
+savedamount=30.00,capacity=NULL, account='savings', accruetf=1 WHERE pocket_id=2
